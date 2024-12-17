@@ -1,47 +1,101 @@
-<!DOCTYPE html> <!-- Research Page-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Meta variable-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="120">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!--Meta tags for SEO-->
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Raja">
-    <meta name="description" content="Research">
-    <meta name="robots" content="index, follow">
+    <!-- icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- acad icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.css" integrity="sha512-cm56uPn8jnzSPsSrmu+/HymUsEvqAZ2QvUQbAfO+JLpm5+3pHN7M/9vBa0quCkbZlFhcqFM3f37vefvZ1+M1sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Radley google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
-
-    <!-- Title -->
     <title>Research</title>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="research.css">
 </head>
 <body>
     <div class="container">
-        <!-- Title -->
         <div class="header">
             <h1>Research</h1>
         </div>
-        
-        <!-- Content -->
-        <div class="content">
-            <ul>
-                <li>To be updated</li>
-            </ul>
+
+        <!-- Research Experience -->
+        <div class="research-experience">
+            <h4>Microsoft Research | AI Infrastructure <a href="https://www.microsoft.com/en-us/research/project/ai-infrastructure/"><i class="fa fa-globe"></i></a></h4>
+            <p>Research Fellow | Advisors: <a href="https://www.microsoft.com/en-us/research/people/nkwatra/">Dr. Nipun Kwatra</a>, 
+                <a href="https://www.microsoft.com/en-us/research/people/ramjee/">Dr. Ramachandran Ramjee</a><br>Bangalore, India | Jul 2023 - Present</p>
+            <span class="toggle-details">More Details ↓</span>
+            <div class="details">
+                <p>Samanvaya: Compute-Communication Overlap for Efficient Inference in Mixtures of Experts (MoE) Models</p>
+                <ul>
+                    <li>Proposed a fine-grained overlap method that effectively hides communication costs in MoE models</li>
+                    <li>Implemented Expert Parallelism in vLLM and highlighted its benefits over Tensor Parallelism for MoE</li>
+                    <li>Developed a lightweight signaling mechanism to initiate Direct Memory Access (DMA)-based partial GPU-GPU <br> communication, which frees all SMs to be used by compute kernel and allows effective overlap</li>
+                    <li>Demonstrated up to a 20% reduction in MoE MLP time for Mixtral 22B in microbenchmarks on 8 H100s</li>
+                    <li>Working to resolve expert load-balancing issues that hinder our gains in end-to-end performance</li>
+                </ul>
+                <p>Compute-Communication Overlap for Efficient Inference in Dense Large Language Models (LLMs)</p>
+                <ul>
+                    <li>Developed a method that decomposes computation and hides communication in Tensor Parallelism for LLMs, reducing <br> communication overhead by 15% on GPT-3 microbenchmarks on A100 GPUs with NVLink</li>
+                    <li>Explored prior overlap solutions to identify issues caused when applying them to new models and GPUs</li>
+                </ul>
+            </div>
         </div>
-        <br>
-        
-        <!-- Links -->
+
+        <div class="research-experience">
+            <h4>Virginia Tech | Department of Computer Science</h4>
+            <p>Research Collaborator | Advisor: <a href="https://huaicheng.github.io">Prof. Huaicheng Li</a><br>Remote | Jul 2024 - Sep 2024</p>
+            <span class="toggle-details">More Details ↓</span>
+            <div class="details">
+                <p>Damon-CXL: Two-tier memory management for Compute Express Link (CXL) memory</p>
+                <ul>
+                    <li>Integrated DAMON-based memory management patches into the linux and reviewed the source code</li>
+                    <li>Analyzed Redis performance on emulated CXL memory using YCSB benchmarks and <br> compared results with vanilla linux memory management configurations to identify improvements and bottlenecks</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="research-experience">
+            <h4>IIT Bombay | SynerG Lab, Dept. of Computer Science and Engineering <a href="https://www.cse.iitb.ac.in/synerg/"><i class="fa fa-globe"></i></a></h4>
+            <p>Undergraduate Researcher | Advisor: <a href="https://www.cse.iitb.ac.in/~puru">Prof. Purushottam Kulkarni</a><br>Mumbai, India | Aug 2022 - Jun 2023</p>
+            <span class="toggle-details">More Details ↓</span>
+            <div class="details">
+                <p>emucxl: Emulation Framework and Access Library for CXL-Based Disaggregated Memory Systems</p>
+                <ul>
+                    <li>Developed a user-space library coupled with a NUMA-based CXL emulation backend for <br> standardized CXL memory access that enables rapid prototyping of disaggregated memory solutions</li>
+                    <li>Conducted a literature survey on CXL stds and showed emucxl capabilities through practical use cases</li>
+                </ul>
+                <p>R&D Project: Persistent Memory (PMem) Applications 
+                    [<a href="https://rajagond.github.io/docs/rnd1_report.pdf">PDF</a>, 
+                    <a href="https://github.com/rajagond/pmem_cxl/tree/main/persistent_memory_rnd1">code</a>]
+                </p>
+                <ul>
+                    <li>Designed and implemented a robust reader-writer program on Non-Volatile Memory using <br> advanced array and pointer techniques, which provides fault tolerance and efficient data access</li>
+                    <li>Explored Persistent Memory Development Kit libraries to understand PMem capabilities and <br> analyzed performance differences between traditional and PMem-based Redis using real-world benchmarks</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="links">
             <a href="../index.html">homepage →</a>
         </div>
     </div>
+
+    <script>
+        // JavaScript to toggle details visibility
+        document.querySelectorAll('.toggle-details').forEach(button => {
+            button.addEventListener('click', () => {
+                const details = button.nextElementSibling;
+                if (details.style.display === 'block') {
+                    details.style.display = 'none';
+                    button.textContent = 'More Details ↓';
+                } else {
+                    details.style.display = 'block';
+                    button.textContent = 'Less Details ↑';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
