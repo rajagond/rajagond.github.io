@@ -16,7 +16,7 @@
 	<!-- Preconnect to Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	<!-- icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- acad icons-->
@@ -25,6 +25,8 @@
 	
 	<!-- favicon-->
 	<link rel="icon" type="image/png" href="images/favicon/favicon.png" sizes="32x32">
+	<meta name="theme-color" content="#f5f0e8" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#101010" media="(prefers-color-scheme: dark)">
 	
 	<!-- Title -->
 	<title>Raja Gond</title>
@@ -33,183 +35,99 @@
 </head>
 
 <body>
-	<!-- Main Table-->
-	<table align='center' border='0' cellpadding='10' width='800'>
-		<tbody>
-			<tr>
-				<td>
-					<table align='center' border='0' cellpadding='10' width='100%'>
-					<tbody>
-						<tr>
-							<td valign='top' width='70%'>
-								<p align='center'>&nbsp;</p>
-								<!-- Title -->
-								<p align='center'><font size='6'>Hi! I'm Raja...</font></p>
+	<div class="page-shell">
+		<header class="hero">
+			<div class="hero-copy">
+				<h1>Hi! I'm Raja...</h1>
+				<p class="intro">
+					I am an incoming CS PhD student at <a href="https://www.cornell.edu/" target="_blank" rel="noopener noreferrer">Cornell University</a>. In 2023, I graduated from an institute in India with a B.Tech. (Honors) in Computer Science. After that, I spent about two and a half years as a Research Fellow with the AI-Infrastructure team at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank" rel="noopener noreferrer">Microsoft Research India</a>, where I worked on efficient and deterministic inference for large language models. When deadlines are quiet, you may find me taking infinite walks or weaving my thoughts into words. Please feel free to get in touch; I'll never not answer!
+				</p>
+				<p class="contact-line">rg873 at cornell dot edu</p>
+				<div class="icon-links" aria-label="Social links">
+					<a href="https://scholar.google.com/citations?hl=en&user=L1ZFr9cAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+					<a href="https://github.com/rajagond" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-square-github"></i></a>
+					<a href="https://www.linkedin.com/in/rajagond/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://twitter.com/_raja_gond" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/_raja_gond/" target="_blank" rel="noopener noreferrer" title="Poetry" aria-label="Poetry"><i class="fa-solid fa-feather-pointed"></i></a>
+				</div>
+			</div>
+		</header>
 
-								<!-- Warning -->
-								<p align='center'>&nbsp;</p>
-								<p align="center" style="color:maroon;">
-								<font size="4">
-									I don't know why my Outlook email (raja.gond@outlook.com) keeps blocking emails from certain IDs/domains. Please reach out to rajagond0205@gmail.com. I am really sorry for the inconvenience.
-								</font>
-								</p>
+		<main class="content-grid">
+			<section class="panel" aria-labelledby="research-heading">
+				<div class="section-heading">
+					<h2 id="research-heading">Research</h2>
+				</div>
+				<ul class="research-list">
+					<li>
+						<h3><strong>Publications</strong></h3>
+						<ul class="paper-list">
+							<li class="paper-item">
+								<div class="paper-main">
+									<div class="paper-head">
+										<a class="paper-title single-line" href="https://arxiv.org/abs/2505.11329" target="_blank" rel="noopener noreferrer">TokenWeave: Efficient Compute-Communication Overlap for Distributed LLM Inference</a>
+										<iframe
+											src="https://ghbtns.com/github-btn.html?user=microsoft&repo=tokenweave&type=star&count=true&size=small"
+											loading="lazy"
+											width="95"
+											height="20"
+											title="TokenWeave GitHub stars">
+										</iframe>
+									</div>
+									<p class="paper-meta"><span class="authors"><strong>Raja Gond</strong>, Nipun Kwatra, Ramachandran Ramjee</span><span class="venue"><strong>MLSys 2026</strong></span></p>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3><strong>Preprints</strong></h3>
+						<ul class="paper-list">
+							<li class="paper-item">
+								<div class="paper-main">
+									<div class="paper-head">
+										<a class="paper-title single-line" href="https://arxiv.org/abs/2601.17768" target="_blank" rel="noopener noreferrer">LLM-42: Enabling Determinism in LLM Inference with Verified Speculation</a>
+										<iframe
+											src="https://ghbtns.com/github-btn.html?user=microsoft&repo=llm-42&type=star&count=true&size=small"
+											loading="lazy"
+											width="95"
+											height="20"
+											title="LLM-42 GitHub stars">
+										</iframe>
+									</div>
+									<p class="paper-meta"><span class="authors"><strong>Raja Gond</strong>, Aditya K Kamath, Ramachandran Ramjee, Ashish Panwar</span><span class="venue">In Submission</span></p>
+								</div>
+							</li>
 
-								
-								<!-- Introduction -->
-								<p align='justify'>
-									I am a Research Fellow in the AI-Infrastructure team at <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india/' target='_blank' style="color:maroon;">Microsoft Research India</a>, where I work on optimizing systems for efficient inference of Large Language Models (LLMs). Currently, I am exploring ways to enable determinism in LLM inference efficiently. 
-									In 2023, I graduated from the Undergraduate Programmes</a> at <a href='https://www.iitb.ac.in/' target='_blank' style="color:maroon;">IIT Bombay</a>, where I earned my B.Tech (with Honors) in Computer Science.
-								</p>
-								<!-- Current Work -->
-								<p align='justify'>
-									My research interests broadly lie in computer systems, with a current focus on making them more efficient for modern machine learning workloads.
-								</p>
-								
-							</td>
-							<!-- Profile Picture -->
-							<!-- <td width='35%' style="position: relative; top: 40px;"><img width='85%' src='images/me.jpg' alt="That's me"></td> -->
-						</tr>
-					</tbody>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<table align='center' border='0' cellpadding='10' width='100%' style="position: relative; top: -70px;">
-						<tbody>
-							<tr>
-								<td width='100%'>
-									<!-- Hoobies -->
-									<p align="justify">
-										When deadlines are quiet and time slows, you may find me taking infinite walks or sitting somewhere with a book. 
-										I used to weave my thoughts into words (check out the poetry below!), though I have stopped doing that recently.
-									</p>
-							
-									<!-- ICONS-->
-									<p class="icons">
-										<font size="4">
-											<a href='mailto:raja.gond@outlook.com' title="E-mail-2"><i class="fa fa-envelope"></i></a>  
-											<a href="https://scholar.google.com/citations?hl=en&user=L1ZFr9cAAAAJ"  target='_blank' title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-											<a href='https://github.com/rajagond' target='_blank' title="GitHub"><i class="fa-brands fa-square-github"></i></a>
-											<a href='https://www.linkedin.com/in/rajagond/' target='_blank' title='LinkedIn'><i class="fa-brands fa-linkedin"></i></a>
-											<a href="https://twitter.com/_raja_gond"  target='_blank' title="Twitter"><i class="fab fa-twitter"></i></a>
-										</font>
-									<ul class="subsections">
-										<!-- <li><a href="./docs/cv.pdf" target='_blank' title='CV' style="white-space: nowrap;">Curriculum Vitae <i class="ai ai-cv-square"></i></a></li> -->
-										<li><a href="https://www.instagram.com/_raja_gond/" target='_blank' title='petals.in.echo'>Poetry</a></li>
-										<li><a href="./notes/notes.html">Notes</a></li>
-									</ul>
-									</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		<tr>
-			<td>
-				<table align='center' border='0' width='100%' style="position: relative; top: -120px;">
-					<tbody>
-						<tr>
-							<td width='100%'>
-							<h2>Research</h2>
-							<!-- Research Experience -->
-							<div class="research-experience">
-								<ul class="research-experience-list">
-									<li class="research-experience-item">
-										<h3>Publications</h3>
-										<ul class="sub-research-experience-list">
-											<li class="sub-research-experience-item">
-												<a href="https://arxiv.org/abs/2505.11329" target="_blank">TokenWeave: Efficient Compute-Communication Overlap for Distributed LLM Inference</a> |
-												<iframe 
-												src="https://ghbtns.com/github-btn.html?user=microsoft&repo=tokenweave&type=star&count=true&size=small" 
-												frameborder="0" scrolling="0" width="90" height="20" 
-												style="vertical-align: text-bottom; margin-left: 4px;" 
-												title="GitHub Star Button">
-												</iframe>
-												<br>
-												<span class="authors">
-													<strong class="highlight-author">Raja Gond</strong>, Nipun Kwatra, Ramachandran Ramjee | <strong>MLSys 2026</strong>
-												</span>
-											</li>
-										</ul>
-									</li>
-									<li class="research-experience-item">
-										<h3>Preprints</h3>
-										<ul class="sub-research-experience-list">
-											<li class="sub-research-experience-item">
-												<a href="https://arxiv.org/abs/2601.17768" target="_blank">LLM-42: Enabling Determinism in LLM Inference with Verified Speculation</a> |
-												<iframe
-												src="https://ghbtns.com/github-btn.html?user=microsoft&repo=llm-42&type=star&count=true&size=small" 
-												frameborder="0" scrolling="0" width="90" height="20" 
-												style="vertical-align: text-bottom; margin-left: 4px;" 
-												title="GitHub Star Button">
-												</iframe>
-												<br>
-												<span class="authors">
-													<strong class="highlight-author">Raja Gond</strong>, Aditya K Kamath, Ramachandran Ramjee, Ashish Panwar
-												</span>
-											</li>
-											<li class="sub-research-experience-item">
-												<a href="https://arxiv.org/abs/2404.08311" target="_blank">emucxl: an emulation framework for CXL-based disaggregated memory applications</a> |
-												<iframe 
-												src="https://ghbtns.com/github-btn.html?user=cloudarxiv&repo=emucxl&type=star&count=true&size=small" 
-												frameborder="0" scrolling="0" width="90" height="20" 
-												style="vertical-align: text-bottom; margin-left: 4px;" 
-												title="GitHub Star Button">
-												</iframe>
-												<br>
-												<span class="authors">
-													<strong class="highlight-author">Raja Gond</strong>, Puru Kulkarni
-												</span>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<h2>Service</h2>
-							<!-- Service -->
-							<div class="service">
-							<ul class="service-list">
-								<li class="service-item">
-								Artifact Evaluation Committee
-								<ul class="sub-service-list">
-									<li class="sub-service-item">
-									<a href="https://www.usenix.org/conference/atc25/call-for-artifacts" target="_blank">ATC'25</a> /
-									<a href="https://www.usenix.org/conference/osdi25/call-for-artifacts" target="_blank">OSDI'25</a>
-									</li>
-									<li class="sub-service-item">
-									<a href="https://sosp25ae.hotcrp.com/users/pc" target="_blank">SOSP'25</a>
-									</li>
-									<li class="sub-service-item">
-									<a href="https://sysartifacts.github.io/eurosys2026/organizers" target="_blank">EuroSys'26</a>
-									</li>
-								</ul>
-								</li>
-							</ul>
-							</div>
-						</td>
-					</tbody>
-				</table>
-			</td>
-		</tr>
+							<li class="paper-item">
+								<div class="paper-main">
+									<div class="paper-head">
+										<a class="paper-title single-line" href="https://arxiv.org/abs/2404.08311" target="_blank" rel="noopener noreferrer">emucxl: an emulation framework for CXL-based disaggregated memory applications</a>
+										<iframe
+											src="https://ghbtns.com/github-btn.html?user=cloudarxiv&repo=emucxl&type=star&count=true&size=small"
+											loading="lazy"
+											width="95"
+											height="20"
+											title="emucxl GitHub stars">
+										</iframe>
+									</div>
+									<p class="paper-meta"><span class="authors"><strong>Raja Gond</strong>, Puru Kulkarni</span><span class="venue"></span></p>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
 
-		</tbody>
-		<tfoot>
-		<!-- Footer -->
-			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-				<tbody>
-					<tr>
-						<td style="padding:0px">
-						<br>
-						<p style="text-align:right;" class="inspire">
-						Last updated Jan 2026. Thanks <a href="https://jonbarron.info/">Jon Barron</a> for the template!
-						</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</tfoot>
-	</table>	
+			<section class="panel" aria-labelledby="service-heading">
+				<div class="section-heading">
+					<h2 id="service-heading">Service</h2>
+				</div>
+				<ul class="service-list">
+					<li><strong>Artifact Evaluation Committee:</strong> <a href="https://www.usenix.org/conference/atc25/call-for-artifacts" target="_blank" rel="noopener noreferrer">ATC'25</a> / <a href="https://www.usenix.org/conference/osdi25/call-for-artifacts" target="_blank" rel="noopener noreferrer">OSDI'25</a>, <a href="https://sosp25ae.hotcrp.com/users/pc" target="_blank" rel="noopener noreferrer">SOSP'25</a>, <a href="https://sysartifacts.github.io/eurosys2026/organizers" target="_blank" rel="noopener noreferrer">EuroSys'26</a></li>
+				</ul>
+			</section>
+		</main>
+
+	</div>
 </body>
 </html>
