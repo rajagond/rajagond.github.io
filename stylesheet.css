@@ -254,6 +254,103 @@ h3 {
   justify-self: start;
 }
 
+.paper-extras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: var(--text);
+  grid-column: 1 / -1;
+}
+
+.paper-resources {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paper-resources a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 1.05rem;
+  transition: color 0.15s ease;
+}
+
+.paper-resources a:hover,
+.paper-resources a:focus-visible {
+  color: var(--link);
+}
+
+.paper-artifact {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.artifact-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.paper-extras .badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 9px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.badge-available {
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+  border-color: rgba(34, 197, 94, 0.35);
+}
+
+.badge-functional {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.badge-reproduced {
+  background: rgba(59, 130, 246, 0.12);
+  color: #1d4ed8;
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge-available {
+    background: rgba(74, 222, 128, 0.16);
+    color: #86efac;
+    border-color: rgba(74, 222, 128, 0.4);
+  }
+
+  .badge-functional {
+    background: rgba(248, 113, 113, 0.18);
+    color: #fca5a5;
+    border-color: rgba(248, 113, 113, 0.45);
+  }
+
+  .badge-reproduced {
+    background: rgba(96, 165, 250, 0.18);
+    color: #93c5fd;
+    border-color: rgba(96, 165, 250, 0.45);
+  }
+}
+
 .service-list {
   list-style: none;
   padding-left: 2rem;
