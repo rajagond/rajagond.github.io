@@ -293,17 +293,11 @@ h3 {
   gap: 6px;
 }
 
-.artifact-label {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 .paper-extras .badge {
   display: inline-flex;
   align-items: center;
-  padding: 1px 9px;
+  gap: 5px;
+  padding: 2px 10px;
   border-radius: 999px;
   font-size: 0.72rem;
   font-weight: 500;
@@ -311,6 +305,10 @@ h3 {
   letter-spacing: 0.01em;
   border: 1px solid transparent;
   white-space: nowrap;
+}
+
+.paper-extras .badge i {
+  font-size: 0.7rem;
 }
 
 .badge-available {
