@@ -361,6 +361,13 @@ h3 {
   margin-bottom: 6px;
 }
 
+/* Label + stacked detail lines aligned to where the label ends. */
+.service-list li.stacked {
+  display: flex;
+  gap: 0.4em;
+  align-items: baseline;
+}
+
 .service-list ul {
   margin-top: 4px;
   padding-left: 1.2rem;
