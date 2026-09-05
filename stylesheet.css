@@ -179,7 +179,7 @@ h3 {
   text-align: center;
   font-size: 0.9rem;
   color: var(--accent);
-  background: var(--accent-bg);
+  /* background: var(--accent-bg); */
   border: 1px solid var(--accent);
   border-radius: 6px;
 }
